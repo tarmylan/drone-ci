@@ -1,0 +1,24 @@
+debug: true
+
+workspace:
+    base: /go
+    path: src/test
+
+pipeline:    
+    build:
+        image: golang:1.8
+        environment:
+            - GOOS=linux
+            - GOARCH=amd64
+            - CGO_ENABLED=0
+        commands:
+            - go build -o hello .
+    publish:
+        image: plugins/docker
+        registry: 172.16.10.233:5000
+        repo: 172.16.10.233:5000/test/hello
+        tag: latest
+        file: Dockerfile
+        insecure: true
+        when:
+            branch: master
