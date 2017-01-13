@@ -9,8 +9,9 @@ su git 以 git 用户登录，到 git 用户的主目录中新建好 .ssh 文件
 ```
 
 ## Gogs
-[Source](https://github.com/gogits/gogs)
-[Run with docker](https://github.com/gogits/gogs/tree/master/docker)
+[gos on github](https://github.com/gogits/gogs)
+
+[Run in docker](https://github.com/gogits/gogs/tree/master/docker)
 
 ```text
 # Pull image from Docker Hub.
