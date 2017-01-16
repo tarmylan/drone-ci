@@ -1,5 +1,5 @@
 
-## use Gogs + Drone + docker + registry 自动构建镜像并推送到镜像仓库
+## Gogs + Drone + docker + registry 自动构建镜像并推送到镜像仓库
 
 #新建用户
 ```text
